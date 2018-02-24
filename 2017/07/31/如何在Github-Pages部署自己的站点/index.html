@@ -1,0 +1,780 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="教程使用软件GIT，GIT是一个开源的分布式版本控制系统。 准备 1、软件GIT 官方网站https://git-scm.com/   2、一份已编写的网页文件!3、注册Github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在Github Pages部署自己的站点">
+<meta property="og:url" content="http://sunjiahui.win/2017/07/31/如何在Github-Pages部署自己的站点/index.html">
+<meta property="og:site_name" content="assassin">
+<meta property="og:description" content="教程使用软件GIT，GIT是一个开源的分布式版本控制系统。 准备 1、软件GIT 官方网站https://git-scm.com/   2、一份已编写的网页文件!3、注册Github">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%201.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%202.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%203.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%204.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%205.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%206.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%207.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%208.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%209.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2010.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2011.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2012.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2013.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2014.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2015.JPG">
+<meta property="og:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2016.JPG">
+<meta property="og:updated_time" content="2017-08-01T06:26:32.148Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何在Github Pages部署自己的站点">
+<meta name="twitter:description" content="教程使用软件GIT，GIT是一个开源的分布式版本控制系统。 准备 1、软件GIT 官方网站https://git-scm.com/   2、一份已编写的网页文件!3、注册Github">
+<meta name="twitter:image" content="http://or4i0pkvy.bkt.clouddn.com/17-7-31%201.JPG">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://sunjiahui.win/2017/07/31/如何在Github-Pages部署自己的站点/"/>
+
+
+
+
+
+  <title>如何在Github Pages部署自己的站点 | assassin</title>
+</head>
+
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">assassin</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://sunjiahui.win/2017/07/31/如何在Github-Pages部署自己的站点/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="孙嘉辉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://or4i0pkvy.bkt.clouddn.com/tx%20%281%29.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="assassin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">如何在Github Pages部署自己的站点</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-31T20:56:18+08:00">
+                2017-07-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>教程使用软件GIT，GIT是一个开源的分布式版本控制系统。</p>
+<p><strong>准备</strong></p>
+<p>1、软件GIT 官方网站<a href="https://git-scm.com/" title="下载" target="_blank" rel="external">https://git-scm.com/</a>  </p>
+<p>2、一份已编写的网页文件!<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%201.JPG" alt="1"><br>3、注册Github</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p><strong>开始</strong>：（以下出现的test指你的网页名或者你想起的一切名字）</p>
+<p><font color="#0000FF">步骤一</font>：登录到Github上，新建一个New Repository，命名为test，勾选 initialize this repository with a README，点击create repository。!<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%202.JPG" alt="2"><img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%203.JPG" alt="3"></p>
+<p><font color="#0000FF">步骤二</font>：打开settings，有一个Github Pages 的设置，点击 source 中的本来的 None ，使其变成 master 分支，也就是作为部署github pages 的分支，然后点击 save。<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%204.JPG" alt="4"><img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%205.JPG" alt="5"></p>
+<p><font color="#0000FF">步骤三</font>：页面刷新之后，再看 github pages 设置框处，多了一行网址，就是你的 github pages 的网址了。<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%206.JPG" alt="6">点击这个链接<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%207.JPG" alt="7">至此以上，github上要处理的操作告一段落，接下来使用Git。</p>
+<p><font color="#0000FF">步骤四</font>：打开此电脑，选择一个盘，比如 f 盘，右键空白处点击 git bash here。<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%208.JPG" alt="8"></p>
+<p><font color="#0000FF">步骤五</font>：输入如下命令，用来在 f 盘创建 test 文件放你的github上的test repository，克隆test repository到 test 文件中。</p>
+<pre><code>依次输入下方代码
+$ mkdir test    
+$ cd test/
+$ git clone https://github.com/sunjiahui8888/test.git
+</code></pre><p><img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%209.JPG" alt="9">这个时候你的 f 盘，就会多一个 test 文件，打开它<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2010.JPG" alt="10">会看到一个 README.md 的文件，这个文件是从哪来的呢？追溯到gihub上，你会发现 README 文件是来自 master 分支。<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2011.JPG" alt="11"></p>
+<p><font color="#0000FF">步骤六</font>：将自己的网页文件复制粘贴至 f 盘的 test 文件中<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2012.JPG" alt="12"></p>
+<p><font color="#0000FF">步骤七</font>：执行如下命令!</p>
+<pre><code>$ cd test
+$ git status
+$ git add .
+$ git status    
+</code></pre><p><img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2013.JPG" alt="13">解释一下上面的命令：首先输入  git status   列出当前目录所有还没有被git管理的文件和被git管理且被修改但还未提交(git commit)的文件，也就是所有改动文件，红色字体标出。<br>然后输入 git add .  (有个点) 表示添加当前目录下的所有文件和子目录，然后 再输入一次 git status 如果看见文件都变绿了 ，那么就代表 它们已经准备好了被提交（git commit）。</p>
+<p><font color="#0000FF">步骤八</font>：输入如下命令，将你的文件上传至远程 master 分支</p>
+<pre><code>$ git commit -m &quot;modify&quot;
+$ git pull
+$ git push
+</code></pre><p><img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2014.JPG" alt="14">如果第一次使用，输入最后一行 git push，按回车，等一会，会有弹出框让你输入你的 github 账号和密码。<img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2015.JPG" alt="15"><img src="http://or4i0pkvy.bkt.clouddn.com/17-7-31%2016.JPG" alt="16"></p>
+<p><font color="#0000FF">最后一步</font>：打开浏览器再次输入github pages的网址，然后重重的按下回车，访问你的网站</p>
+<p><hr><br>附录一：常用git命令：<br>$ git clone  //本地如果无远程代码，先做这步，不然就忽略<br>$ cd //定位到你blog的目录下<br>$ git status //查看本地自己修改了多少文件<br>$ git add . //添加远程不存在的git文件<br>$ git commit  -m “what I want told to someone” //提交修改<br>$ git push  //更新到远程服务器上<br>$ git rm //移除文件</p>
+<p>附录二：如何修改你的网页？<br>方法一：在github上的master分支中直接进行修改。（如果不添加新的文件推荐此法）<br>方法二：在github客户端进行修改在同步。（如果添加了新的文集推荐此法）</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/21/起初他们追杀共产主义者/" rel="next" title="起初他们追杀共产主义者">
+                <i class="fa fa-chevron-left"></i> 起初他们追杀共产主义者
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/08/amd/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://or4i0pkvy.bkt.clouddn.com/tx%20%281%29.jpg"
+               alt="孙嘉辉" />
+          <p class="site-author-name" itemprop="name">孙嘉辉</p>
+           
+              <p class="site-description motion-element" itemprop="description">万物皆虚，万事皆允</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/308319484" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+<br>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=18267037&auto=0&height=66"></iframe>
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">孙嘉辉</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    
+
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2140504"></script>
+      <!-- UY END -->
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
